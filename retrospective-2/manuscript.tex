@@ -13,6 +13,7 @@
 %%% Packages
 \usepackage{fancyhdr}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage{lastpage}
 \usepackage{setspace}
 \usepackage{ulem}
@@ -27,6 +28,13 @@
 %%% Font
 \renewcommand*\rmdefault{ptm}
 \renewcommand*\ttdefault{pcr}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
 
 %%% Spacing
 \onehalfspacing
@@ -46,9 +54,15 @@
     \textit{Copyright \copyright\ #3 #2; licensed under cc BY-NC-SA 3.0}
   \end{center}
 }
+\newcommand\adjsp{
+  [adjective][species]
+}
+\newcommand\adsp{
+  [a][s]
+}
 
 \begin{document}
-  \title{[adjective][species] Retrospective Year 2}
+  \title{\adjsp Retrospective Year 2}
   \author{Madison ``Makyo'' Scott-Clary, \textit{Ed.}}
   \maketitle
   \newpage
@@ -85,10 +99,24 @@
   \input{content/makyo/furries-and-music}
 
   \chapter{February}
+  \input{content/jm/service}
+  \input{content/rabbit/birds-of-a-feather}
 
   \chapter{March}
+  \input{content/jm/a-horses-thoughts-on-the-horsemeat-scandal}
+  \input{content/rabbit/food-stuff}
+  \input{content/jm/love-for-an-inanimate-object}
+  \input{content/jm/a-bitch-about-furry}
+  \input{content/makyo/leadership-in-a-decentralized-subculture}
+  \input{content/jm/my-little-mlp-adventure-prologue}
 
   \chapter{April}
+  \input{content/jm/my-little-mlp-adventure-verdict}
+  \input{content/jm/the-adjspecies-my-little-pony-cocktail}
+  \input{content/makyo/appropriation-in-furry}
+  \input{content/rabbit/furry-impressions}
+  \input{content/jm/furry-internationalism}
+  \input{content/lunostophiles/whiskey-sour}
 
   \chapter{May}
 
