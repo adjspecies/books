@@ -14,7 +14,7 @@ watch:
 
 .PHONY: sysdeps
 sysdeps:
-	sudo apt-get install texlive xzdec
+	sudo apt-get install tex4ht texlive xzdec
 
 .PHONY: update-texdeps
 update-texdeps:
